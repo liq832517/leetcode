@@ -14,7 +14,7 @@ public class 回文置换2 {
         }
     }
     public static List<String> generatePalindromes(String s) {
-        List<String> res=new LinkedList<>();
+        List<String> res=new LinkedList<String>();
         int []letter=new int[26];
 
         char[]c=s.toCharArray();
