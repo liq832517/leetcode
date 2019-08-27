@@ -1,5 +1,10 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 public class 整数反转 {
     public static int reverse(int x){
 
@@ -15,7 +20,6 @@ public class 整数反转 {
            ans = ans*10 + pop;
            x/=10;
        }
-
        return ans;
 
     }
