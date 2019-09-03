@@ -1,2 +1,2 @@
-# Coding makes my dream come true
+# Hustle hustle hustle
 刷过的算法题总结
