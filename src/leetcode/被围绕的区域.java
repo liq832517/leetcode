@@ -43,8 +43,4 @@ public class 被围绕的区域 {
         }
         return;
     }
-    public static void main(String[]args){
-        //char[][]n=new char[][]{"XXOXX".toCharArray(),"XOOOX".toCharArray(),"XXXOX".toCharArray(),"XOOXX".toCharArray()};
-        surroundedRegions(new char[][]{});
-    }
 }
