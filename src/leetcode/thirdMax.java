@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.PriorityQueue;
 
-public class 第三大的数 {
+public class thirdMax {
     @Test
     public void test() {
         System.out.println(thirdMax(new int[]{3,2,1}));

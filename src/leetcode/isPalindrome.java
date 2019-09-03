@@ -1,7 +1,7 @@
 package leetcode;
 
-public class 回文数 {
-    public static boolean solution(int x){
+public class isPalindrome {
+    public boolean isPalindrome(int x){
 
         if(x<0 ||(x!=0&&x%10==0)) return false;
         int ans = 0;

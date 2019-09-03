@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 最大正方形 {
+public class maximalSquare {
     // dp[i][j] = min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1])+1
     public int maximalSquare(char[][] matrix) {
 

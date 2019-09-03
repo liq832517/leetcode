@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.Stack;
 
-public class 字符串解码 {
+public class decodeString {
     @Test
     public void test() {
         System.out.println(decodeString("2[abc]3[cd]ef"));

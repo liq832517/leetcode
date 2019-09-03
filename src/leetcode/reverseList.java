@@ -8,7 +8,7 @@ class ListNode {
         val = x;
     }
 }
-public class 反转链表 {
+public class reverseList {
     public ListNode reverseList(ListNode head) {
         ListNode cur = head;
         ListNode pre = null;

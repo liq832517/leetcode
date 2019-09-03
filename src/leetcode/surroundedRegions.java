@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 被围绕的区域 {
+public class surroundedRegions {
     public static void surroundedRegions(char[][] board) {
         if(board.length==0)
             return;

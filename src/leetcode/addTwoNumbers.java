@@ -1,7 +1,7 @@
 package leetcode;
 
 
-public class 两数相加 {
+public class addTwoNumbers {
     public class ListNode {
         int val;
         ListNode next;

@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.HashMap;
 
-public class 无重复字符的最长子串 {
+public class lengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
 
         int max = 0;

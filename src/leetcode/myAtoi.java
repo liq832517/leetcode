@@ -2,7 +2,7 @@ package leetcode;
 
 import org.junit.Test;
 
-public class 字符串转换整数 {
+public class myAtoi {
     @Test
     public void test() {
         System.out.println(myAtoi("-2147483649"));
