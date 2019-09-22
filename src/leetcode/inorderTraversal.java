@@ -13,21 +13,15 @@ public class inorderTraversal {
                 return res;
             }
             Stack<TreeNode> stack = new Stack<TreeNode>();
-            stack.push(root);
             TreeNode cur = root;
-            while (!stack.isEmpty() || cur != null) {
-                while (cur.left != null) {
-                    cur = cur.left;
+            while (!stack.isEmpty()||cur!=null) {
+                while (cur != null) {
                     stack.push(cur);
+                    cur = cur.left;
                 }
-                if (!stack.isEmpty()) {
-                    res.add(stack.pop().val);
-                    if (cur.right != null) {
-                        cur = cur.right;
-                        stack.push(cur);
-                    }
-                }
-
+                cur = stack.pop();
+                res.add(cur.val);
+                cur = cur.right;
             }
             return res;
         }
