@@ -45,7 +45,7 @@ public class judgePoint24 {
                     ArrayList<String> nowRes2 = new ArrayList<>();
                     //对非被选中的，直接加入
                     for (int k = 0; k < nums.size(); k++) {
-                        if (k != i && k!=j) {
+                        if (k != i && k != j) {
                             nums2.add(nums.get(k));
                             nowRes2.add(nowRes.get(k));
                         }
@@ -96,7 +96,7 @@ public class judgePoint24 {
 
         List<Double> res = new ArrayList<>();
         for (int i : nums) {
-            res.add((double)i);
+            res.add((double) i);
         }
 
         return partition(res);

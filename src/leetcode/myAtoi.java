@@ -31,7 +31,7 @@ public class myAtoi {
             if (res * flag > Integer.MAX_VALUE / 10 || res * flag == Integer.MAX_VALUE / 10 && (str.charAt(i) - '0') > 7) {
                 return Integer.MAX_VALUE;
             }
-            if (res * flag < Integer.MIN_VALUE / 10 || res * flag == Integer.MIN_VALUE / 10 && flag*(str.charAt(i) - '0') < -8) {
+            if (res * flag < Integer.MIN_VALUE / 10 || res * flag == Integer.MIN_VALUE / 10 && flag * (str.charAt(i) - '0') < -8) {
                 return Integer.MIN_VALUE;
             }
             res = res * 10 + (str.charAt(i) - '0');

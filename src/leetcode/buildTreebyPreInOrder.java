@@ -2,7 +2,7 @@ package leetcode;
 
 public class buildTreebyPreInOrder {
 
-    public TreeNode buildTreebyPreInOrder(int[] preorder, int[] inorder){
+    public TreeNode buildTreebyPreInOrder(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0) return null;
         int len = preorder.length;
         return partition(preorder, inorder, 0, len - 1, 0);
@@ -10,7 +10,7 @@ public class buildTreebyPreInOrder {
 
     private TreeNode partition(int[] preorder, int[] inorder, int inleft, int inright, int preleft) {
         TreeNode root = new TreeNode(preorder[preleft]);
-        if(inleft == inright) return root;
+        if (inleft == inright) return root;
         int x = -1;
 
         for (int i = inleft; i <= inright; i++) {
