@@ -1,2 +1,2 @@
-# Hustle hustle hustle
+# leetcode
 刷过的算法题总结
