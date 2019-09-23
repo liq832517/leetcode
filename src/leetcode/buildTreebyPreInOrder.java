@@ -1,6 +1,14 @@
 package leetcode;
 
+import org.junit.Test;
+
 public class buildTreebyPreInOrder {
+
+    @Test
+    public void test() {
+        inorderTraversal in = new inorderTraversal();
+        System.out.println(in.inorderTraversal(buildTreebyPreInOrder(new int[]{2, 1}, new int[]{1, 2})));
+    }
 
     public TreeNode buildTreebyPreInOrder(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0) return null;
@@ -9,28 +17,18 @@ public class buildTreebyPreInOrder {
     }
 
     private TreeNode partition(int[] preorder, int[] inorder, int inleft, int inright, int preleft) {
+        if (inleft > inright) return null;
         TreeNode root = new TreeNode(preorder[preleft]);
         if (inleft == inright) return root;
-        int x = -1;
 
         for (int i = inleft; i <= inright; i++) {
             if (preorder[preleft] == inorder[i]) {
-                x = i;
-                break;
+                root.left = partition(preorder, inorder, inleft, i - 1, preleft + 1);
+                root.right = partition(preorder, inorder, i + 1, inright, preleft + i - inleft + 1);
+                return root;
             }
         }
 
-        if (inleft == x || x == -1) {
-            root.left = null;
-        } else {
-            root.left = partition(preorder, inorder, inleft, x - 1, preleft + 1);
-        }
-        if (inright == x || x == -1) {
-            root.right = null;
-        } else {
-            root.right = partition(preorder, inorder, x + 1, inright, preleft + x - inleft + 1);
-        }
-
-        return root;
+        return null;
     }
 }
