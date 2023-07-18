@@ -7,7 +7,7 @@ public class buildTreebyPreInOrder {
     @Test
     public void test() {
         inorderTraversal in = new inorderTraversal();
-        System.out.println(in.inorderTraversal(buildTreebyPreInOrder(new int[]{2, 1}, new int[]{1, 2})));
+        System.out.println(in.inorderTraversal(buildTreebyPreInOrder(new int[]{4,1,0,2,3,6,5,7,8}, new int[]{0,1,2,3,4,5,6,7,8})));
     }
 
     public TreeNode buildTreebyPreInOrder(int[] preorder, int[] inorder) {

@@ -24,8 +24,8 @@ public class findKthLargest {
         int i = low, j = high;
         int temp = nums[low];
         while (i < j) {
-
-            while (i < j && nums[j] < temp) j--;while (i < j && nums[i] >= temp) i++;
+            while (i < j && nums[j] < temp) j--;
+            while (i < j && nums[i] >= temp) i++;
             if (i < j) {
                 swap(nums, i, j);
             }

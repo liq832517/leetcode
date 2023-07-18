@@ -1,6 +1,5 @@
 package leetcode;
 
-import com.sun.tools.javac.util.StringUtils;
 
 public class longestPalindrome {
     int left = 0;
